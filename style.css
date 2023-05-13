@@ -1,0 +1,886 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    transform: scale(1fr)
+}
+.tinkoffPayRow{
+    margin-left: auto;
+    margin-right: auto;
+    font-size:1em;
+    display:block;
+    margin-top:5%;
+    margin-bottom:5%;
+    width:160px;
+    animation: TinkoffPayFormAnim 3s 1;
+    
+}
+@keyframes TinkoffPayFormAnim{
+    from{
+        margin-top:200px;
+        opacity: 0;
+    }
+    to{
+        margin-top:0px;
+        opacity: 1;
+    }
+}
+.OplataDiv .oplata{
+    width:20em;
+    /*border:1px solid red;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.OplataBtn2{
+    cursor: pointer;
+    font-family: Arial;
+    appearance: auto;
+    color: white;
+    font-style: normal;
+    font-weight: 653;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 5px 0px 5px 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 50%;
+    background: #50BDF7;
+    border-radius: 23px;
+    transition: 0.5s;
+}
+/*.main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}*/
+
+.header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: 15px;
+    text-align: center;
+    background-color: #B4F3FF;
+}
+.header table{
+    text-align: center;
+    width: 100%;
+}
+.header table td{
+    /*border: 1px solid red;*/
+    width: 33%;
+    min-width: 33%;
+    text-align: center;
+}
+.headerContent {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.headerContent div {
+    min-width: 416px;
+}
+
+.titleDiv #firstTitleSpan {
+    font-size: 150%;
+}
+
+.titleDiv {
+    font-size: 2.5vw;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 8%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.logoDiv {
+    text-align: center;
+}
+.logoDiv img{
+    /*width: 7rem;*/
+    width: 20vw;
+}
+.OplataContacts {
+    font-size: 1em;
+    text-align: center;
+}
+
+.tel {
+    font-size: 1.5vw;
+    text-align: center;
+    height: 60px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.icons {
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 45%;*/
+}
+
+.icons img {
+    width: 2.5vw;
+}
+
+.oplata {
+    width: 625;
+    margin-top: 5%;
+}
+.oplata a{
+    cursor: default;
+}
+.OplataBtn {
+    cursor: pointer;
+    font-family: Arial;
+    appearance: auto;
+    color: white;
+    font-style: normal;
+    font-weight: 653;
+    font-size: 1em;
+    text-transform: capitalize;
+    padding: 5px 0px 5px 0px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 70%;
+    height: 90.65px;
+    background: #50BDF7;
+    border-radius: 23px;
+    transition: 0.5s;
+}
+
+.OplataBtn:hover {
+    background-color: white;
+    color: #50BDF7;
+}
+.OplataBtn2:hover {
+    background-color: white;
+    color: #50BDF7;
+}
+.menu {
+    font-size:1em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: #B4F3FF;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-bottom: 30px;
+    box-shadow: #B4F3FF 0px 0px 100px 100px;
+}
+.AdminMenu{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: #B4F3FF;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.NotIndexMenu{
+    font-size:1em;
+    font-family: Arial;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: #B4F3FF;
+    padding-top: 10px;
+    box-shadow: #B4F3FF 0px 0px 70px 55px;
+}
+.menuBtn {
+    background-color: #B4F3FF;
+    color: black;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.mid {
+    min-height: 450px;
+    padding-bottom: 30px;
+}
+.NotIndexMid{
+    overflow-y: hidden;
+    min-height: 450px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-shadow: white 0px 0px 70px 55px;
+}
+.carousel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+}
+.plavDiv {
+    background: no-repeat url("imgs/plav.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 50vmax;
+}
+
+#FormaZapisi {
+    font-family: Arial;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000079 ;
+    visibility: hidden;
+    z-index: -1;
+}
+
+#FormaZapisi #forma {
+    width: 20em;
+    background-color: white;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#FormaZapisi #forma span{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial;
+    font-size: 2em;
+}
+#FormaZapisi #forma select{
+    font-family: Arial;
+    font-size: 1em;
+}
+#FormaZapisi #forma input[type=submit]{
+    font-family: Arial;
+    font-size: 1em;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: #50BDF7;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#FormaZapisi #forma input[type=submit]:hover{
+    background-color: white;
+    color: #50BDF7;
+}
+#closeDiv{
+    border-radius: 30px 30px 0px 0px;
+    height: 45px;
+    text-align: right;
+}
+#closeDiv button{
+    font-size: 1em;
+    border-radius: 0px 30px 0px 0px;
+    width: 50px;
+    padding: 5px;
+    border: none;
+    background-color: white;
+}
+#FormaZapisi #forma form{
+    padding: 15px;
+    font-size: 1em;
+}
+#bassein{
+    width: 70%;
+}
+#FormaZapisi #forma form input{
+    font-size: 1em;
+}
+.btns{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 5rem;
+}
+.btns button, a{
+    padding: 10px;
+    margin-top:10px;
+}
+.zayavka{
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.zayavka input, select{
+    font-size: 20px;
+}
+
+.zayavka input[type=submit]{
+    font-family: Arial;
+    font-size: 24px;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: #50BDF7;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.zayavka input[type=submit]:hover{
+    background-color: white;
+    color: #50BDF7;
+}
+
+.btns button {
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 0.8;
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 246px;
+    height: 91px;
+    background: #50BDF7;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.aboutDiv {
+    box-shadow: white 0px 0px 70px 100px;
+}
+
+.WhyChooseDiv {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+.WhyChooseDiv1{
+    animation: WhyChooseDivAnim 2s 1;
+}
+@keyframes WhyChooseDivAnim{
+    from{
+        margin-top: 100px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 20px;
+        opacity: 1;
+    }
+}
+
+.WhyChooseDiv img {
+    /*margin-left: 6%;*/
+    border-radius: 30px;
+    width:  220px;
+    height: 220px;
+    min-width: 100px;
+}
+
+.WhyChoose {
+    border-radius: 10px;
+    width: 69.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow-wrap: break-word;
+}
+
+.WhyChoose div {
+    padding: 10px;
+    min-height: fit-content;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 150%;
+    text-align: center;
+    text-align: center;
+    /*margin-left: 6%;*/
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 69%;
+}
+
+.aboutDiv .aboutBtn button {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #009CFF;
+    width: 310px;
+    transition: 0.5s;
+    height: 110px;
+    background: #FACA4F;
+    opacity: 0.44;
+    border-radius: 45px;
+}
+
+.aboutDiv .aboutBtn {
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.aboutDiv .aboutBtn button:hover {
+    color: #FACA4F;
+    background-color: #009CFF;
+    ;
+}
+
+.aboutDiv h1 {
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 24px;
+}
+.about table{
+    font-family: Arial;
+    font-style: italic;
+    font-size: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+    
+}
+.about img{
+    width: 50%;
+}
+.plavDiv button:hover {
+    background-color: white;
+    color: #50BDF7;
+}
+.prefotter{
+    background-color: #B4F3FF;
+    height: 120px;
+    position: relative;
+    z-index: -1;
+}
+.fotter {
+    background-color: #B4F3FF;
+}
+.fotterUpper{
+    position: relative;
+    z-index: 5000;
+}
+.info {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    cursor: pointer;
+}
+
+.info a {
+    color: #2877A9;
+    text-decoration: none;
+}
+
+.oplataMethods {
+    text-align: center;
+}
+
+.oplataMethods p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #2877A9;
+}
+
+.oplataMethods img {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addForm {
+    font-size: 24px;
+    text-align: center;
+}
+
+.addHeader {
+    color: #2877A9;
+    font-size: 40px;
+    padding-top: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.SubBtn {
+    padding: 5px 20px 5px 20px;
+}
+
+.mid input {
+    font-size: 24px;
+}
+
+.mid textarea {
+    font-size: 24px;
+}
+
+.ShowDiv {
+    border-top: 2px solid black;
+    margin-top: 20px;
+    padding-top: 30px;
+}
+
+.ShowTable {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.TD {
+    width: 150px;
+}
+
+.tableTextDiv {
+    text-align: left;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+.NewsDiv {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-size: 1em;
+    border-radius: 30px;
+    width: 20em;
+    animation: trenerAnim 2s 1;
+}
+
+.NewsTitle {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid #2877A9;
+}
+
+.NewsText {
+    max-height: 500px;
+    max-width: 1000px;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
+}
+
+.Treners {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    max-width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TrenerDiv {
+    width: 500px;
+    border-radius: 30px;
+    /*padding: 20px;*/
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    animation: trenerAnim 2s 1;
+}
+@keyframes trenerAnim{
+    from{
+        margin-top: 100px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 30px;
+        opacity: 1;
+    }
+}
+.TrenerDiv .Foto{
+    text-align: center;
+}
+.TrenerDiv .Fio {
+    padding-top: 20px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+}
+.TrenerDiv .opisanie{
+    font-family: Arial;
+    font-style: normal;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+}
+.Groups{
+    display: flex;
+    flex-wrap: wrap;
+}
+.group{
+    font-family: Arial;
+    animation: trenerAnim 2s 1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.group h1{
+    color:#2877A9;
+    text-align: center;
+}
+.group .text{
+    text-align:center;
+    font-size: 1em;
+}
+.contact{
+    animation: ContactAnim 2s 1;
+    margin-top: 100px;
+    font-family: Arial;
+    font-size: 1em;
+    text-align: center;
+    width: 30%;
+    margin-left: 35%;
+    position: absolute;
+}
+.contact h1{
+    font-size: 1em;
+    font-family: Arial;
+}
+.contact div{
+    text-align:center;
+}
+@keyframes ContactAnim{
+    from{
+        padding-top: 100px;
+        opacity: 0;
+    }
+    to{
+        padding-top: 0px;
+        opacity: 1;
+    }
+}
+.FotoGaleryDiv{
+    margin-left: auto;
+    margin-right: auto;
+    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FotoGalery{
+    animation: ContactAnim 2s 1;
+    margin: 20px;
+}
+.numPagesDiv{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.numPages{
+    font-family: Arial;
+    margin-left:5px;
+    margin-right:5px;
+    color: black;
+}
+.PodrobneeDiv{
+    margin-top: 200px;
+    font-size: 1em;
+    font-family: Arial;
+    text-align: center;
+    animation: Podrobnee 2s 1;
+}
+@keyframes Podrobnee{
+    from{
+        margin-top: 300px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 200px;
+        opacity: 1;
+    }
+}
+
+.BasseinDiv{
+    margin-top: 70px;
+    font-family: Arial;
+    text-align: center;
+    /*width: 40em;*/
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    animation: basseins 2s 1;
+}
+.BasseinDiv td{
+    width:1em;
+}
+@keyframes basseins{
+    from{
+        margin-top: 200px;
+        opacity: 0;
+    }
+    to{
+        margin-top: 70px;
+        opacity: 1;
+    }
+}
+.BasseinDiv img{
+    width: 300px;
+}
+.BasseinDiv .bottom{
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.BasseinDiv .bottom{
+    text-align: left;
+}
+.BasseinDiv .bottom .t1,.t2{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.BasseinDiv .bottom .t1 table{
+    font-size: 1em;
+    text-align: center;
+    width: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formOtzivDiv{
+    font-family: Arial, Helvetica, sans-serif;
+    /*display: grid;
+    grid-template-columns: 50% 50%;*/
+    font-size: 1em;
+    color: #2877A9;
+    margin-top: 70px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: basseins 2s 1;
+}
+.otzivFormDiv{
+    text-align:center;
+}
+.formOtzivDiv input, textarea{
+    font-size: 1em;
+}
+.otzivi{
+    padding-top: 10px;
+    max-height: 542px;
+    overflow-y: scroll;
+}
+.formOtzivDiv input[type=submit]{
+    font-family: Arial;
+    font-size: 1em;
+    padding: 10px 30px 10px 30px;
+    border: none;
+    background-color: #50BDF7;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.formOtzivDiv input[type=submit]:hover{
+    background-color: white;
+    color: #50BDF7;
+}
+
+.otzivDiv{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px solid red;*/
+    border-radius: 15px;
+    background-color: #50BDF7;
+    
+}
+.otzivDiv .nameSender, .otzivDiv .bodyOtziv{
+    padding: 7px;
+    color: white;
+}
+
+
+
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #84d7e6;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 15px 15px;
+    z-index: 1;
+}
+
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    border-radius: 0px 0px 15px 15px;
+    display: block;
+}
+
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+
+.dropdown-content a:hover {
+    background-color: #90eeff;
+}
+
+
+/* Показать выпадающее меню при наведении курсора */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .dropbtn {
+    background-color: #B4F3FF;
+}
